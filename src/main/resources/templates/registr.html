@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+	<title>Registration</title>
+
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="/static/style.css">
+	
+	<link rel="stylesheet" href="../static/login.css">
+	<link rel="stylesheet" href="/static/login.css">
+
+
+</head>
+<body>
+
+<div class="msg">
+    <div class="eror" th:if="${param.error}">
+        Invalid username and password.
+    </div>
+    <div class="logout" th:if="${param.logout}">
+        You have been logged out.
+    </div>
+    <div class="eror" th:if="${message != null}" th:text="${message}"></div>
+</div>
+
+<form th:action="@{/registr}" method="post" enctype="multipart/form-data">
+   <div class="logo"><a href="" class="logo" >Znanya</a></div>
+    <div class="in_form">
+        <div class="username">
+            <div class="txt">Username:</div> 
+            <input type="text" name="username" class="input" placeholder="Введите ваш логин"> 
+            <div class="line"></div>
+        </div>
+        <div class="pass">
+             <div class="txt">Password:</div>
+            <input type="password" name="password" class="input" placeholder="Введите ваш пароль"> 
+            <div class="line"></div>
+        </div>
+
+		<div class="file">
+			<input type="file" name="file" id="in_file">
+			<label for="in_file" id="file">Фото профиля</label>
+		</div>
+
+        <div class="submit">
+            <input type="submit" value="Регистрация" class="in_submit" />
+        </div>
+	</div>
+	
+	<div class="social">
+	    <div class="vk">
+	        <a class="icon_social" href="#">
+	            <img src="../static/img/social/facebook.png" alt="">
+	        </a>
+	    </div>
+	    <div class="inst">
+	        <a class="icon_social" href="#">
+	            <img src="../static/img/social/instagram.png" alt="">
+	        </a>
+	    </div>
+	    <div class="facebook">
+	        <a class="icon_social" href="#">
+	            <img src="../static/img/social/vk.png" alt="">
+	        </a>
+	    </div>
+	</div>
+	
+
+	
+</form>
+</body>
+</html>

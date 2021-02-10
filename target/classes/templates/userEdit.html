@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+   <link rel="stylesheet" href="../static/userEdit.css">
+    <link rel="stylesheet" href="/static/userEdit.css">
+    
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="/static/style.css"> 
+
+    <meta charset="UTF-8">
+    <title>userEdit</title>
+</head>
+<body>
+<div th:insert="blocks/header :: head"></div>
+
+<div class="nameTag">
+Редактирование пользователя, <div th:text="${user.getUsername()}"></div>
+</div>
+
+<form th:action="@{/user/update}" method="post" class="form">
+       
+       <div class="username">
+           Userame:<input class="in_username"  type="text" th:value="${user.getUsername()}" name="username">
+       </div>
+       <div class="pass">
+            Password:<input class="in_pass" type="text" th:value="${user.getPassword()}" name="password">
+       </div>
+       <div class="role">
+           Role: 
+        <div class="in_role" th:each="role : ${user}">
+            <div th:text="${role.getRoles()}"></div>
+        </div>
+       </div>
+    
+    
+    <input type="hidden" th:value="${user.getId()}" name="userId"/>
+    <input type="submit" value="Save" class="btn"/>
+</form>
+
+<form th:action="@{/user/delete}" method="post" class="form">
+    <input class="in_username"  type="hidden" th:value="${user.getUsername()}" name="username">
+    <input class="in_pass" type="hidden" th:value="${user.getPassword()}" name="password">
+    <input type="hidden" th:value="${user.getId()}" name="userId"/>
+    <input type="submit" value="Delete" class="btn"/>
+</form>
+
+
+
+<a class="return_btn" href="/user">Вернутся к списку пользователей</a>
+</body>
+</html>

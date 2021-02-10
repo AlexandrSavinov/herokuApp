@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>UserList</title>
+
+    <link rel="stylesheet" href="../static/head.css">
+    <link rel="stylesheet" href="/static/head.css">
+
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="/static/main.css">
+       
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="/static/main.css">
+
+    <link rel="stylesheet" href="../static/scrollbar.css">
+    <link rel="stylesheet" href="/static/scrollbar.css">
+    
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="/static/style.css"> 
+    
+     <link rel="stylesheet" href="../static/userList.css">
+    <link rel="stylesheet" href="/static/userList.css">
+
+    <link rel="stylesheet" href="../static/bottom.css">
+    <link rel="stylesheet" href="/static/bottom.css">
+
+    
+</head>
+<body>
+<div th:insert="blocks/header :: head"></div>
+
+
+<div class="nameTag">Список пользователей</div>
+
+<div class="userContain" th:each="list:${userList}">
+    <div class="innerUsr">
+           
+        <b>ИМЯ:
+        <div class="field" th:text="${list.getUsername()}"></div>
+        </b>
+<!--        <b>РОЛЬ:-->
+<!--        <div class="field" th:text="${list.getNameRole()}"></div>-->
+<!--        </b>-->
+        <b>ID:
+        <div class="field" th:text="${list.getId()}"></div></b>
+
+<!--        <b>filename-->
+<!--        <div class="field" th:text="${list.getFilename()}"></div></b>-->
+
+        <a class="btn" th:href="@{user/}+${list.getId()}">EDIT USER</a>
+    </div>
+
+</div>
+    <div class="absolute" id="absolute">
+    <form th:action="@{/user}" method="get" class="filter">
+        <input type="text" name="filter" th:value="${filter}" placeholder="  Введите имя пользователя" class="filter_input"/>
+        <input type="submit" value="Поиск" class="btn_filter"/>
+    </form>
+    <div class="contain">
+        <div class="textarea"  th:each="message:${messageList}">
+            <div class="in_textarea">
+                <div class="bl">
+                    <img class="ava" th:src="@{img/}+${message.getFilename()}" alt="">
+                    <!--                    <img class="ava" src="../static/img/bg-01.jpg" alt="">-->
+
+                    <b th:text="${message.getAuthorName()}"></b>
+                </div>
+                <div class="txt">
+                    <span th:text="${message.getText()}"></span>
+                </div>
+                <a class="btn" th:href="@{main/}+${message.getId()}">DELETE</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="bottom">
+
+    <div class="in_bottom" id="foother">
+        <div class="in_b_logo">
+            <a class="in_b_logo_a" href="index.html">
+                Znanya
+            </a>
+        </div>
+        <div class="in_b_nav">
+            <ul class="in_b_nav_ul">
+                <a class="in_b_a" th:href="@{/}"><li>MAIN</li></a>
+                <a class="in_b_a" th:href="@{/registr}"><li>REGISTR</li></a>
+                <a class="in_b_a" th:href="@{/main}"><li>CHAT</li></a>
+            </ul>
+        </div>
+        <div class="in_b_txt">by Znanya</div>
+    </div>
+
+</div>
+
+<script src="static/js/scroll.js"></script>
+<script src="../static/js/scroll.js"></script>
+
+<script src="static/js/scrollBottom.js"></script>
+<script src="../static/js/scrollBottom.js"></script>
+
+
+</body>
+</html>

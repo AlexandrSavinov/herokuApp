@@ -1,0 +1,189 @@
+.logo{
+
+    
+    font-family: impact;
+    
+    text-decoration: none;
+    font-size: 45px;
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+}
+.filter{
+    margin-top:10px;
+    padding: 3px;
+    background: linear-gradient(45deg, #9890e3, #b1f4cf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter_input{
+    border:0;
+    
+    
+    color: black;
+    background: linear-gradient(45deg, #e6e9f0, #eef1f5);
+    height: 29px;
+    width: 39%;
+}
+
+.btn_filter{
+    height: 30px;
+    transition: .3s linear;
+    cursor: pointer;
+    margin: auto 0;
+    text-align: center;
+    width: 90px;
+    
+    background: linear-gradient(45deg, #00c6fb, #005bea);
+    
+    border: 0;
+
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+}
+.btn_filter:hover{
+    background: linear-gradient(45deg, #d299c2, #fef9d7);
+}
+
+.area{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contain{
+    width: 40%;
+    height: 470px;
+    overflow-x: hidden;
+    background: rgba(145, 247, 136,.1);
+}
+
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 90px;
+    background: linear-gradient(45deg, #9890e3, #b1f4cf);
+}
+.form,.filter{
+
+    width: 40%;
+}
+
+.send{
+    border-radius: 3px;
+    margin: auto 0;
+    width: 300px;
+    height: 70px;
+    text-align: center;
+    border:0;
+}
+
+.out_btn,.btn{
+    transition: .7s linear;
+    cursor: pointer;
+    border:0;
+    border-radius: 50%;
+    margin: auto 11px;
+    height: 70px;
+    width: 70px;
+    background: linear-gradient(45deg, #00c6fb, #005bea);
+}
+.out_btn:hover{
+    background: linear-gradient(45deg, #d299c2, #fef9d7);
+}
+.btn{
+    
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(img/send.png);
+    background-size: 53%;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+
+}
+
+
+
+
+
+.textarea{
+    margin: 3px;
+}
+.in_textarea{
+    background: white;
+    
+    height: 20%;
+    
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.ava{
+    height: 65px;
+}
+.bl{
+    font-family: impact;
+    
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 20%;
+    
+}
+.txt{
+    
+    font-family: arial;
+    
+    padding-right: 7px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    
+    word-break:break-all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

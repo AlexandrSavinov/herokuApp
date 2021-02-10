@@ -1,0 +1,12 @@
+com\example\znanya\repos\UserRepo.class
+com\example\znanya\service\UserService.class
+com\example\znanya\controllers\MainController.class
+com\example\znanya\domain\Message.class
+com\example\znanya\domain\Role.class
+com\example\znanya\Application.class
+com\example\znanya\config\MvcConfig.class
+com\example\znanya\domain\User.class
+com\example\znanya\controllers\UserController.class
+com\example\znanya\controllers\RegistrationController.class
+com\example\znanya\config\WebSecurityConfig.class
+com\example\znanya\repos\MessageRepo.class

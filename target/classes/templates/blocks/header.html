@@ -1,0 +1,45 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="../../static/head.css">
+    <link rel="stylesheet" href="/static/head.css">
+</head>
+
+    <div class="top" th:fragment="head" id="head">
+        <div class="logo">
+            <a class="logo" href="index.html">
+                Znanya
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+                <a class="href" th:href="@{/}"><li>MAIN</li></a>
+                <a class="href" th:href="@{/registr}"><li>REGISTR</li></a>
+                <a class="href" th:href="@{/main}"><li>CHAT</li></a>
+                
+                <form th:action="@{/logout}" method="post" class="li">
+                    <input type="submit" value="Sign Out" class="sigOut"/>
+                </form>
+            </ul>
+        </div>
+    </div>
+
+<div id="bottom" th:fragment="foother">
+
+    <div class="in_bottom" id="foother">
+        <div class="in_b_logo">
+            <a class="in_b_logo_a" href="index.html">
+                Znanya
+            </a>
+        </div>
+        <div class="in_b_nav">
+            <ul class="in_b_nav_ul">
+                <a class="in_b_a" th:href="@{/}"><li>MAIN</li></a>
+                <a class="in_b_a" th:href="@{/registr}"><li>REGISTR</li></a>
+                <a class="in_b_a" th:href="@{/main}"><li>CHAT</li></a>
+            </ul>
+        </div>
+        <div class="in_b_txt">by Znanya</div>
+    </div>
+
+</div>
+

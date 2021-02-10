@@ -1,0 +1,247 @@
+.eror,.logout{
+    height: 30px;
+    width: 300px;
+    
+    background: linear-gradient(225deg, rgb(196, 61, 81) 24%, rgb(209, 45, 149));
+    margin: 10px;
+    
+    text-align: center;
+    border-radius: 7px;
+    line-height: 25px;
+    
+    font-weight: 300;
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+}
+.logout{
+   background: linear-gradient(225deg, rgb(21, 126, 64) 24%, rgb(72, 207, 169));
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url(img/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    justify-content: center;
+    font-family: ;
+    transition: .3s linear;
+    
+}
+.eror,.logout{
+    
+    position: absolute;
+    top:0;
+    left:40%;
+    
+}
+.logo{
+    margin-bottom: 70px;
+    
+    font-family: impact;
+    
+    text-decoration: none;
+    font-size: 45px;
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    
+    height: 100%;
+    width: 30%;
+    
+    background: white;
+    
+}
+
+.in_form div{
+    padding-left: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+.input, .in_submit{
+    margin: 9px;
+    
+    height: 50px;
+    width: 300px;
+    border-radius: 3px;
+}
+.input{
+    border: 0;
+    padding-left: 10px;
+    font-size: 20px;
+    transition: .3s linear;
+}
+.input:focus + .line{
+    background: rgba(0,0,0,0.7);
+    
+}
+.line{
+    transition: .3s linear;
+    
+    width: 100%;
+    height: 3px;
+    background: rgba(0,0,0,0.2);
+    
+    position: relative;
+    top: -10px;
+    z-index: 10;
+    
+}
+.txt{
+    margin-top: 10px;
+    font-size: 13px;
+}
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.in_submit{
+    border:0;
+    
+    margin-top: 30px;
+    
+    height: 50px;
+    width: 200px;
+    
+    background: linear-gradient(45deg, #00c6fb, #005bea);
+    text-transform: uppercase;
+    
+    transition: .3s linear;
+    cursor: pointer;
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+}
+.in_submit:hover{
+    background: linear-gradient(45deg, #a7a6cb, #8989ba);
+     color: black;
+    text-shadow: 1px 0 1px white,
+                -1px 0 1px white,
+        0px 1px 1px white,
+        0px -1px 1px white,
+        1px 0 3px white,
+                -1px 0 1px white,
+        0px 1px 1px white,
+        0px -1px 1px white;
+}
+
+.social{
+    margin-top: 30px;
+    display: flex;
+}
+
+.social div{
+    margin: 10px;
+}
+.icon_social img{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.registr a, a:active{
+    color: black;
+}
+.registr{
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+.file{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    width: 100%;
+}
+#in_file{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+#file{
+    border-radius: 30px;
+    background: linear-gradient(45deg, #00c6fb, #005bea);
+    
+    font-family: arial;
+    color: aliceblue;
+    cursor:pointer;
+    
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    
+    padding-top: 5px;
+    
+    transition: .3s linear;
+    text-align: center;
+    
+      text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+    
+}
+
+#file:hover{
+    background: linear-gradient(45deg, #a7a6cb, #8989ba);
+     color: black;
+    text-shadow: 1px 0 1px white,
+                -1px 0 1px white,
+        0px 1px 1px white,
+        0px -1px 1px white,
+        1px 0 3px white,
+                -1px 0 1px white,
+        0px 1px 1px white,
+        0px -1px 1px white;
+}
+
+
+
+
+

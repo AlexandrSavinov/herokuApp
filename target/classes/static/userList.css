@@ -1,0 +1,100 @@
+.userContain{
+    width: 100%;
+    height: 100%;
+}
+.innerUsr{
+    padding: 3px;
+    border: 1px solid ;
+    border-image: linear-gradient(45deg, #30cfd0, #330867);
+    border-image-slice: 1;
+    
+    width: 600px;
+    background: linear-gradient(45deg, #fff1eb, #ace0f9);
+    
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+.field{
+    
+    width: 100px;
+    height: 70px;
+}
+
+.nameTag,.btn{
+    font-size: 45px;
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+}
+.btn{
+    font-family: impact;
+    transition: .7s linear;
+    cursor: pointer;
+    border:0;
+    
+    border-radius: 3px;
+    
+    text-align: center;
+    font-size: 30px;
+    
+    margin: auto 11px;
+    height: 70px;
+    width: 170px;
+    background: linear-gradient(45deg, #00c6fb, #005bea);
+    
+    margin-right: 10px;
+    cursor: pointer;
+    height: 100%;
+
+}
+.btn:hover{
+    background: linear-gradient(45deg, #d299c2, #fef9d7);
+}
+
+
+
+
+
+
+
+
+
+.absolute{
+
+    position: fixed;
+/*    top:50px;*/
+    top:150px;
+    right: 10px;
+    width: 50%; 
+    height: 470px;
+    
+    transition: .3s linear;
+}
+
+.filter{
+     width: 100%;
+    
+}
+.contain{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,100 @@
+
+.nameTag,.role{
+    display: flex;
+    font-size: 45px;
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+}
+
+.username,.pass{ 
+    margin: 1px;
+    
+    font-size: 25px;
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+}
+
+.in_pass{
+    margin-left: 13px;
+}
+.in_username{
+    margin-left: 18px;
+}
+.form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.role{
+    font-size: 25px;
+    display: flex;
+    line-height: 50px;
+}
+.in_role{
+    font-size: 30px;
+    color:pink;
+    font-family:impact;
+}
+.btn{
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+    
+    transition: .7s linear;
+    cursor: pointer;
+    border:0;
+    
+    border-radius: 3px;
+    
+    text-align: center;
+    font-size: 30px;
+    
+   
+    height: 70px;
+    width: 170px;
+    background: linear-gradient(45deg, #00c6fb, #005bea);
+    
+    margin-right: 10px;
+    cursor: pointer;
+    height: 100%;
+
+}
+.btn:hover{
+    background: linear-gradient(45deg, #d299c2, #fef9d7);
+}
+
+.return_btn{
+    height: 170px;
+    width: 170px;
+    
+    transition: .3s linear;
+    cursor: pointer;
+    margin: auto 0;
+    text-align: center;
+
+
+    color: black;
+   
+    
+}

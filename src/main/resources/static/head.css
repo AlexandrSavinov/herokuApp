@@ -1,0 +1,119 @@
+a, a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.top{
+    width:100%;
+    height: 100px;
+
+    background: linear-gradient(45deg, #a8edea, #fed6e3);
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+
+    transition: .3s linear;
+    cursor: pointer;
+    
+    font-family: impact;
+    color: aliceblue;
+     text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+
+}
+.nav{
+   width: 70%;
+   height: 100%;
+    
+}
+
+ul{
+    height: 100%;
+    width: 100%;
+    
+    list-style: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+
+.sigOut{
+    text-transform: uppercase;
+    
+    transition: .3s linear;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    color: aliceblue;
+    text-shadow: 1px 0 1px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black,
+        1px 0 3px black,
+                -1px 0 1px black,
+        0px 1px 1px black,
+        0px -1px 1px black;
+    
+     background: linear-gradient(45deg, #00c6fb, #005bea);
+    
+    
+}
+
+.sigOut:hover, .href:hover{
+    background: linear-gradient(45deg, #a7a6cb, #8989ba);
+     color: black;
+    text-shadow: 1px 0 1px white,
+                -1px 0 1px white,
+        0px 1px 1px white,
+        0px -1px 1px white,
+        1px 0 3px white,
+                -1px 0 1px white,
+        0px 1px 1px white,
+        0px -1px 1px white;
+}
+
+
+
+.href,.li{
+    transition: .3s linear;
+    cursor: pointer;
+    margin: auto 0;
+    text-align: center;
+    width: 11%;
+    height: 30%;
+    background: rgb(86, 181, 184,.9);
+    box-shadow: 0 0 15px 5px rgb(86, 181, 184,.9);
+    
+   
+
+    color: aliceblue;
+    text-shadow: 0 0 9px white;
+      
+    
+}
+.li{
+    width: 15%;
+    height: 35%;
+}
+li{
+    
+    margin: 3px;
+}
